@@ -1,7 +1,0 @@
-server:
-  port: 8081
-  tomcat:
-    max-swallow-size:  -1  #上传大文件服务器正常响应
-  servlet:
-    context-path: /mddn
-
