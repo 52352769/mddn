@@ -3,14 +3,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.5.6</version>
-        <relativePath/> <!-- lookup parent from repository -->
+       <artifactId>mddn-upms</artifactId>
+        <groupId>net.mddn.upms</groupId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>net.mddn.upms.api</groupId>
     <artifactId>mddn-upms-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>mddn-upms-api</name>
     <description>mddn-upms-api</description>
     <properties>
