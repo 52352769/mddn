@@ -3,25 +3,28 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-       <artifactId>mddn</artifactId>
+        <artifactId>mddn</artifactId>
         <groupId>net.mddn</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>net.mddn.auth</groupId>
-    <artifactId>mddn-auth</artifactId>
+    <groupId>net.mddn.test</groupId>
+    <artifactId>mddn-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>mddn-auth</name>
-    <description>mddn-auth</description>
+
+    <name>mddn-test</name>
+    <description>mddn-test</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
-        <!--注册中心客户端-->
+        <!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-starter-alibaba-nacos-config -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <version>2021.1</version>
         </dependency>
+
 
     </dependencies>
 

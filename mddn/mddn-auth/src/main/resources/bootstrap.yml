@@ -1,0 +1,10 @@
+server:
+  port: 3000
+
+spring:
+  application:
+    name: mddn-auth
+  cloud:
+    nacos:
+      discovery:
+        server-addr: http://localhost:8848

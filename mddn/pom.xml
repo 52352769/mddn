@@ -24,7 +24,7 @@
         <module>mddn-register</module>
         <module>mddn-upms</module>
         <module>mddn-visual</module>
-
+        <module>mddn-test</module>
     </modules>
 
 
@@ -127,7 +127,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            <!-- spring cloud alibaba 依赖 -->
+            <!-- spring cloud alibaba 依赖  工程整合nacos-->
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
