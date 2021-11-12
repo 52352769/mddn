@@ -10,7 +10,7 @@
     <groupId>net.common</groupId>
     <artifactId>mddn-common-bom</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <name>mddn-common-bom</name>
     <description>mddn-common-bom</description>
     <properties>

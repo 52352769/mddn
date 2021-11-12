@@ -105,9 +105,9 @@
         <dependencies>
             <!--pigx 公共版本定义-->
             <dependency>
-                <groupId>com.pig4cloud</groupId>
-                <artifactId>pig-common-bom</artifactId>
-                <version>3.4.0</version>
+                <groupId>net.common</groupId>
+                <artifactId>mddn-common-bom</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
