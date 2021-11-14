@@ -1,0 +1,9 @@
+server:
+  port: 5004
+spring:
+  application:
+    name: @artifactId@
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_HOST:192.168.137.1}:${NACOS_PORT:8848}
