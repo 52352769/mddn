@@ -6,17 +6,25 @@ spring:
     name: @artifactId@
   cloud:
     nacos:
-      discovery:
-        server-addr: ${NACOS_HOST:192.168.137.1}:${NACOS_PORT:8848}
+      discovery:  #发现
+        server-addr: ${NACOS_HOST:192.168.221.1}:${NACOS_PORT:8848}
+      config:
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        file-extension: yml #文件扩展名
+        shared-configs: #共享配置
+          - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
 
-    gateway:
-      locator:
-        enabled: true
-      routes:
-        # 认证中心
-        - id: mddn-auth
-          uri: lb://mddn-auth
-          predicates:
-            - Path=/auth/**
-          filters:
-            - StripPrefix=1
+  profiles:
+    active: @profiles.active@
+
+#    gateway:
+#      locator:
+#        enabled: true
+#      routes:
+#        # 认证中心
+#        - id: mddn-auth
+#          uri: lb://mddn-auth
+#          predicates:
+#            - Path=/auth/**
+#          filters:
+#            - StripPrefix=1

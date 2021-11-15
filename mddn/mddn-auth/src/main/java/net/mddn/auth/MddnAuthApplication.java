@@ -15,7 +15,7 @@ public class MddnAuthApplication {
         SpringApplication.run(MddnAuthApplication.class, args);
     }
 
-/*    @RefreshScope
+ /*   @RefreshScope
     @RestController
     @RequestMapping("/auth")
     class AuthController{
